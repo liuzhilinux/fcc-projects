@@ -6,10 +6,76 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>build-a-survey-form</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: white;
+        }
+
+        #main {
+            width: 64%;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
+<div id="main">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">It is description</p>
+    <form action="#" id="survey-form" method="POST">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" required autofocus placeholder="N"><br>
 
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" required placeholder="Em"><br>
 
+        <label id="number-label" for="number">Number: </label>
+        <input id="number" type="number" min="1" max="100" required placeholder="1~100"><br>
+
+        <label for="dropdown">Dropdown</label>
+        <select id="dropdown">
+            <option>Option - 1</option>
+            <option>Option - 2</option>
+            <option>Option - 3</option>
+        </select><br/>
+
+        <div>
+            <label for="radio-1">Radio - 1</label>
+            <input id="radio-1" type="radio" name="r" value="Radio - 1">
+            <label for="radio-2">Radio - 2</label>
+            <input id="radio-2" type="radio" name="r" value="Radio - 2">
+            <label for="radio-3">Radio - 3</label>
+            <input id="radio-3" type="radio" name="r" value="Radio - 3">
+            <label for="radio-4">Radio - 4</label>
+            <input id="radio-4" type="radio" name="r" value="Radio - 4">
+            <label for="radio-5">Radio - 5</label>
+            <input id="radio-5" type="radio" name="r" value="Radio - 5"><br/>
+        </div>
+
+        <div>
+            <label for="checkbox-1">Checkbox - 1</label>
+            <input id="checkbox-1" type="checkbox" name="c" value="Checkbox - 1">
+            <label for="checkbox-2">Checkbox - 2</label>
+            <input id="checkbox-2" type="checkbox" name="c" value="Checkbox - 2">
+            <label for="checkbox-3">Checkbox - 3</label>
+            <input id="checkbox-3" type="checkbox" name="c" value="Checkbox - 3">
+            <label for="checkbox-4">Checkbox - 4</label>
+            <input id="checkbox-4" type="checkbox" name="c" value="Checkbox - 4">
+            <label for="checkbox-5">Checkbox - 5</label>
+            <input id="checkbox-5" type="checkbox" name="c" value="Checkbox - 5">
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+</div>
 
 <script src="/bundle.js"></script>
 </body>
