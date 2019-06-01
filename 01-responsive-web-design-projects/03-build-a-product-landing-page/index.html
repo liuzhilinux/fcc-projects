@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: white;
+        }
+
+        #main {
+            width: 64%;
+            margin: auto;
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            grid-template-columns: 36% 64%;
+        }
+
+        @media (max-width: 650px) {
+            #main {
+                width: 96%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#header">Nav1</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#video">Nav2</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#form">Nav3</a>
+                </li>
+            </ul>
+        </nav>
+        <img id="header-img" src="./img/logo.jpg">
+    </header>
+    <main>
+        <video id="video" src="#"></video>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" placeholder="Em" required autofocus>
+            <input id="submit" type="submit">
+        </form>
+    </main>
+</div>
+
+<script src="/bundle.js"></script>
+</body>
+</html>
