@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build a Technical Documentation Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: white;
+        }
+
+        #main-doc {
+            width: 64%;
+            margin: auto;
+            display: flex;
+            grid-template-columns: 15% 85%;
+        }
+
+        @media (max-width: 650px) {
+            #main-doc {
+                width: 96%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<main id="main-doc">
+    <nav id="navbar">
+        <header>Doc</header>
+        <a class="nav-link" href="#Header_1">Header 1</a>
+        <a class="nav-link" href="#Header_2">Header 2</a>
+        <a class="nav-link" href="#Header_3">Header 3</a>
+        <a class="nav-link" href="#Header_4">Header 4</a>
+        <a class="nav-link" href="#Header_5">Header 5</a>
+    </nav>
+    <section class="main-section" id="Header_1">
+        <header>Header 1</header>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <code>code</code>
+        <code>code</code>
+        <code>code</code>
+        <code>code</code>
+        <code>code</code>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Header_2">
+        <header>Header 2</header>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </section>
+    <section class="main-section" id="Header_3">
+        <header>Header 3</header>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+    </section>
+    <section class="main-section" id="Header_4">
+        <header>Header 4</header>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+    </section>
+    <section class="main-section" id="Header_5">
+        <header>Header 5</header>
+        <p>Paragraph 9</p>
+        <p>Paragraph 10</p>
+    </section>
+</main>
+
+<script src="/bundle.js"></script>
+</body>
+</html>
