@@ -1,10 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build a Personal Portfolio Webpage</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background-color: white;
+        }
+
+        #welcome-section {
+            width: 64%;
+            margin: auto;
+            top: 0;
+            min-height: 55vh;
+            padding-top: 45vh;
+        }
+
+        #navbar {
+            position: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 650px) {
+            #welcome-section {
+                width: 96%;
+                margin: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-$END$
+<nav id="navbar">
+    <ul>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+    </ul>
+</nav>
+<section id="welcome-section">
+    <h1>My Portfolio</h1>
+</section>
+
+<ul id="projects">
+    <li>
+        <header class="project-tile">My Project 1</header>
+        <a href="#" target="_blank">Link</a>
+    </li>
+    <li>
+        <header class="project-tile">My Project 2</header>
+        <a href="#" target="_blank">Link</a>
+    </li>
+    <li>
+        <header class="project-tile">My GitHub 3</header>
+        <a id="profile-link" href="https://www.freecodecamp.one/ling" target="_blank">Link</a>
+    </li>
+
+</ul>
+
+<script src="/bundle.js"></script>
 </body>
 </html>
